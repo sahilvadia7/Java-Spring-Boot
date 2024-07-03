@@ -1,4 +1,4 @@
-package core.ClassObjectMethods;
+package ClassObjectMethods;
 
 public class vehicle1 {
 

@@ -5,7 +5,7 @@
 // If the person is under 18, they automatically qualify for the discount, regardless of their student status.
 // If the person is 65 or older, they also qualify for the discount.
 
-package core.conditional_statement;
+package conditional_statement;
 
 import java.util.Scanner;
 

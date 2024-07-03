@@ -7,7 +7,7 @@
 // If the person has a referral from an existing member, the income requirement is reduced to $2,000.
 // If the person has a valid student ID, the age requirement is reduced to 16, and the income requirement is reduced to $1,500.
 
-package core.conditional_statement;
+package conditional_statement;
 
 import java.util.Scanner;
 

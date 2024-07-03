@@ -1,14 +1,14 @@
 // Scenario: Student Performance Tracker
 // A school wants to track student performance based on their scores in multiple subjects. The program should:
 
-// Calculate the average score.
+// Calculate the average s
 // Determine the grade based on the average score using a switch statement.
 // Check if the student has failed any subject (a score below 40 is considered failing).
 // Print a warning message and continue if a subject score is below 50.
 // If the student has failed more than 2 subjects, immediately mark them as failing and break out of the loop.
 
 
-package core.conditional_statement;
+package conditional_statement;
 
 import java.util.Scanner;
 

@@ -6,7 +6,7 @@
 // If the student has a GPA of 4.0, they automatically qualify for the scholarship regardless of extracurricular participation.
 
 
-package core.conditional_statement;
+package conditional_statement;
 
 import java.util.Scanner;
 

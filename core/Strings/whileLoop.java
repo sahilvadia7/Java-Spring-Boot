@@ -1,4 +1,4 @@
-package core.Strings;
+package Strings;
 
 public class whileLoop {
     public static void main(String[] args) {

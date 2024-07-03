@@ -1,4 +1,4 @@
-package core.datatypes;
+package datatypes;
 
 import java.lang.reflect.Array;
 

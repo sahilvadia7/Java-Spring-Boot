@@ -5,7 +5,7 @@
 // The person must have a minimum monthly income of $2,000.
 // If the person has a credit score of 700 or higher, they automatically qualify for the loan regardless of age and income.
 
-package core.conditional_statement;
+package conditional_statement;
 
 import java.util.Scanner;
 

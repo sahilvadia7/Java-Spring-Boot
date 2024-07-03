@@ -1,4 +1,4 @@
-package core.encapsulation;
+package encapsulation;
 
 class GSDemo{
 	private String name;
