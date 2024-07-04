@@ -6,7 +6,6 @@ abstract class MyAbstract{
 	protected int data;
 	protected String str;
 	
-	
 	MyAbstract(int data,String str){
 		this.data = data;
 		this.str= str;
