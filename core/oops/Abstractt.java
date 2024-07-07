@@ -21,7 +21,6 @@ class OopsDemo extends MyAbstract{
 	
 	@Override
 	void printD() {
-		// TODO Auto-generated method stub
 		System.out.println(data);
 		System.out.println(str);
 	}
