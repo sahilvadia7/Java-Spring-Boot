@@ -1,11 +1,8 @@
 package ad_java.enumss;
 
-enum Status{
-    Running,Failed,Pendling,Success;
-}
 public class enumsDemo {
     public static void main(String[] args) {
-        Status s = Status.Running;
+        Status s = Status.RUNNING;
         System.out.println(s);
 
 

@@ -1,18 +1,18 @@
 package oops;
 
-class A extends Thread{
+class Cars extends Thread{
 	public void run(){
 		for(int i =0; i<100; i++) {
-			System.out.println("Hello A");
+			System.out.println("Hello Cars");
 		
 		}
 	}
 }
 
-class B extends Thread{
+class Cycle extends Thread{
 	public void run(){
 		for(int i =0; i<100; i++) {
-			System.out.println("Hello B");
+			System.out.println("Hello Cycle");
 		
 		}
 	}
@@ -22,8 +22,8 @@ public class Threadss {
 
 	public static void main(String[] args) {
 
-		A a=new A();
-		B b=new B();
+		Cars a=new Cars();
+		Cycle b=new Cycle();
 		a.start();
 		b.start();
 	}
