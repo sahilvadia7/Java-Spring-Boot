@@ -7,6 +7,10 @@ enum Laptop{
 
     private int price;
 
+
+    // We create private constructor because, We creating obj in the class only.
+    // HP,ASUZE etc...
+
     private Laptop(int price) {
         this.price = price;
     }
