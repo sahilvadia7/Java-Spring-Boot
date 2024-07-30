@@ -19,7 +19,7 @@ class BMW implements Cars {
     public void Model(){
         System.out.println("BMW M5");
     }
-    
+      
 }
 
 public class FunctionalInterfacee {

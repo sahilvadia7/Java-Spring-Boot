@@ -7,6 +7,11 @@ interface Flower {
     void name();
     void colors();
     void fragrance();
+
+    //java8 feature that allow to write abstract class with body
+    default void origin(){
+        System.out.println("Origin : JAPAN");
+    }
 }
 
 
@@ -23,6 +28,10 @@ class Rose implements Flower{
     public void fragrance(){
         System.out.println("Fragrance : Sweet, floral, sometimes spicy");
     }
+
+    public void origin(){
+        System.out.println("Origin :INDIA");
+    }
     
 }
 
@@ -38,6 +47,10 @@ class Lavender implements Flower{
 
     public void fragrance(){
         System.out.println("Fragrance : Fresh, sweet, herbal");
+    }
+
+    public void origin(){
+        System.out.println("Origin : America");
     }
     
 }
@@ -66,6 +79,7 @@ class MyFav  {
         f.name();
         f.fragrance();
         f.colors();
+        f.origin();
     }
 
 }
@@ -80,16 +94,19 @@ public class myFlower {
         f1.name();
         f1.colors();
         f1.fragrance();
+        f1.origin();
 
         Flower f2 = new Lavender();
         f2.name();
         f2.colors();
         f2.fragrance();
+        f2.origin();
 
         Flower f3 = new Honeysuckle();
         f3.name();
         f3.colors();
         f3.fragrance();
+        f3.origin();
 
 
         System.out.println("\nMy Favorite");
