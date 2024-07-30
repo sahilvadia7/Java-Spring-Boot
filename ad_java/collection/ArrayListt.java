@@ -2,6 +2,7 @@ package ad_java.collection;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 public class ArrayListt {
     public static void main(String[] args) {
@@ -22,5 +23,21 @@ public class ArrayListt {
         for(int i: nums){   
             System.out.println(i);
         }
+
+        Collection a =new ArrayList<>();
+        a.add(1);
+        System.out.println(a);
+
+        //also if you work with index you need to use List because Collection not working with indexes.
+        List<Integer> numList = new ArrayList<Integer>();
+
+        numList.add(1);
+        numList.add(2);
+        numList.add(3);
+        numList.add(4);
+        numList.add(5);
+        
+        System.out.println(numList.indexOf(3));
+
     }
 }
