@@ -13,8 +13,8 @@ public class Treesett {
         
         nums.add(4);
         nums.add(46);
-        nums.add(6);
-        nums.add(78);
+        nums.add(16);
+        nums.add(7);
         nums.add(64);
 
         System.out.println(nums);
