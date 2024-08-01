@@ -12,16 +12,16 @@ public class Iterativee {
     public static void main(String[] args) {
         
 
-        Collection<String> cars = new HashSet<String>();
+        Collection<Integer> Nums = new HashSet<Integer>();
 
-        cars.add("BMW");
-        cars.add("Audi");
-        cars.add("Volvo");
-        cars.add("TaTa");
+        Nums.add(10);
+        Nums.add(27);
+        Nums.add(54);
+        Nums.add(19);
 
 
         //Iterator is a parent class of Colletion
-        Iterator<String> iterator = cars.iterator();
+        Iterator<Integer> iterator = Nums.iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
             
