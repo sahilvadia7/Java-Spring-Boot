@@ -13,7 +13,7 @@ abstract class Car {
 
 
 /**
- *  GwagonR 
+ *  GwagonR class 
  */
 class  G_wagonR extends Car {
 
