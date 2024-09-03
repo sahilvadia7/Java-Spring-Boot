@@ -10,6 +10,9 @@ public class Treesett {
 
         // treeset extends sorting set
         // it give you sorted values
+        // use binary search Tree sort  
+        // time complexity BigO(log(n))
+
         
         nums.add(4);
         nums.add(46);
