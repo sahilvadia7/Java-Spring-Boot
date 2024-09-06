@@ -1,4 +1,4 @@
-package ad_java.collection;
+package ad_java.collection.iterator;
 
 import java.util.Collection;
 import java.util.HashSet;

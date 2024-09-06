@@ -17,5 +17,21 @@ public class LearnMap {
         System.out.println(MyMap);
 
 
+        //traversal by key-values paris
+        for(Map.Entry<Integer,String> e : MyMap.entrySet()){
+            System.out.println(e.getKey()+" "+e.getValue());
+        }
+
+        //traversal by keys
+        for(Integer key: MyMap.keySet()){
+            System.out.println("KEYS : "+key);
+        }
+
+        //traversal by values
+        for(String val: MyMap.values()){
+            System.out.println("Values : "+val);
+        }
+
+
     }
 }
