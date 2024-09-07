@@ -47,8 +47,5 @@ public class LearnCollectionClass {
 
         System.out.println(students);
 
-
-
-
     }
 }
