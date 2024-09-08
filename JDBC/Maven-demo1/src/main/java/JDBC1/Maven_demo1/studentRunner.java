@@ -9,13 +9,26 @@ public class studentRunner {
 
 		public static void main(String[] args) throws SQLException {
 			
+			//database
 			String url="jdbc:postgresql://localhost:5433/student";
 			String uname="postgres";
 			String pass = "root";
 		
+			//objects
 			Connection con = DriverManager.getConnection(url,uname,pass);
 			Scanner sc = new Scanner(System.in);
 			student stu = new student();
+			
+			//variables
+			int opt;
+			
+//			
+//			do {
+//				System.out.println("1. Add Student");
+//				System.out.println("2. Get Student");
+//				System.out.println("Select Option: ");
+//				opt = sc.nextInt();
+//			}while(opt!=0);
 
 			
 			System.out.print("Enter Student id : ");

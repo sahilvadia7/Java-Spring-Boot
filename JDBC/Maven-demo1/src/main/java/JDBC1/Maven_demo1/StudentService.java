@@ -21,6 +21,10 @@ public class StudentService{
 				System.out.println("Data stored!");
 								
 			}
+		
+//		public void fetchStudent() {
+//			String fetch = "Select * from studentdetail"
+//		}
 
 
 
