@@ -1,16 +1,18 @@
 package ad_java.streamapi;
 
 import java.util.Arrays;
-import java.util.Optional;
+import java.util.List;
 
 public class MethodReference {
 
     public static void main(String[] args) {
         
-        Optional<Integer> opList = Optional.empty();
-        // List<String> newstr =opList.stream()
-        //                                 .map(String :: toUpperCase)
-        //                                 .toList();
+        List<String> names = Arrays.asList("Sahil","Nikhil","Ankit","Aryan");
+        List<String> newstr =names.stream()
+                                        .map(String :: toUpperCase)
+                                        .toList();
+
+        newstr.forEach(System.out :: println);
     }
     
 }

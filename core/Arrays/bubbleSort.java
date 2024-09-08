@@ -9,7 +9,6 @@ public class bubbleSort {
 	static Scanner sc = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		System.out.print("Enter length of Array : ");
 		userin = sc.nextInt();
@@ -37,7 +36,6 @@ public class bubbleSort {
 	}
 
 	private static void bubblesort() {
-		// TODO Auto-generated method stub
 
 //		5,3,1,2,4
 		for(int i=0; i<userin; i++) {

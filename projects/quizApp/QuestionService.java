@@ -31,6 +31,7 @@ public class QuestionService {
             System.out.print("Enter ans : ");
             selection[in] = sc.nextLine();
             in++;
+            sc.close();
         }
 
         // for(String s: selection){

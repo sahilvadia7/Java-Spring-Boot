@@ -1,6 +1,6 @@
 package ad_java.collection.comparators;
 
-public class Students implements Comparable<Students>{
+public class Students {
    private int age,year;
    private String name;
    
@@ -31,11 +31,6 @@ public void setName(String name) {
 @Override
 public String toString() {
     return "Strudents [age=" + age + ", year=" + year + ", name=" + name + "]";
-}
-@Override
-public int compareTo(Students arg0) {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'compareTo'");
 }
 
 

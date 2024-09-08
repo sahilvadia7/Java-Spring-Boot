@@ -11,7 +11,7 @@ public class arrays {
             System.out.print("Enter "+i+" value :");
             arr[i] = se.nextInt();
         }
-
+        se.close();
         int j=0;
         while (j<5) {
             System.out.println(arr[j]);

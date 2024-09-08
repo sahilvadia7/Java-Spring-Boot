@@ -4,7 +4,7 @@ import java.util.*;
 public class Hashhset {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		
 		HashSet<Integer> nums = new HashSet<Integer>();
 		nums.add(1);

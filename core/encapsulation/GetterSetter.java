@@ -16,7 +16,7 @@ class GSDemo{
 public class GetterSetter {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		GSDemo gs= new GSDemo();
 		gs.setName("sahil");
 		System.out.println(gs.getName());

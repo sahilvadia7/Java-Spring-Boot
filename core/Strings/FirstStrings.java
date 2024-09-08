@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class FirstStrings {
     public static void main(String[] args) {
 
-//        StringMethod();
-//        MathFunction();
-//        NumberGuessGame();
+       StringMethod();
+       MathFunction();
+       NumberGuessGame();
 
-//        int result = RecursionSum(12);
-//        System.out.println(result);
+       int result = RecursionSum(12);
+       System.out.println(result);
 
 
         int result2 = RecursionFactorial(5);
@@ -18,8 +18,8 @@ public class FirstStrings {
 
 
         int time = 20;
-        String result = (time < 18) ? "Good day." : "Good evening.";
-        System.out.println(result);
+        String result1 = (time < 18) ? "Good day." : "Good evening.";
+        System.out.println(result1);
     }
 
     private static int RecursionFactorial(int i) {
@@ -48,6 +48,7 @@ public class FirstStrings {
         int number = sc.nextInt();
         int Computer = (int) (Math.random() * 10 +1 );
         System.out.println(Computer);
+        sc.close();
 
         if (number == Computer) {
             System.out.println("You guess is right");

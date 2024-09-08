@@ -14,6 +14,7 @@ public class prime{
         for (int i = 0; i < n; i++) {
             numbers[i] = sc.nextInt();
         }
+        sc.close();
 
         System.out.println("The Prime Numbers : ");
         for (int i = 0; i < n; i++) {

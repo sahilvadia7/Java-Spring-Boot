@@ -6,7 +6,7 @@ import java.util.Collections;
 public class ArrayListt {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		ArrayList<String> cars = new ArrayList<String>();
 		cars.add("BMW");
 		cars.add("Audi");

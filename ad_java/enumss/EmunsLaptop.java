@@ -1,7 +1,5 @@
 package ad_java.enumss;
 
-import extra.prime;
-
 enum Laptop{
     HP(50000),ASUZE(40000),LENOVO(60000),MAC(100000);
 

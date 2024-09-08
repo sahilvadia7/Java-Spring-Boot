@@ -47,6 +47,8 @@ class Costomer {
 
         System.out.print("Enter credit score :");
         creditScore = scanner.nextInt();
+
+        scanner.close();
     }
 
     void Loan(){

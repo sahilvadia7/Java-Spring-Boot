@@ -52,7 +52,7 @@ public class twoDArray {
 	}
 
 	private static int[] SearchElement(int[][] nums2, int temp2) {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		for(int i=0; i<row; i++) {
 			for(int j=0; j<col; j++) {
 			     if(nums[i][j]==temp) {

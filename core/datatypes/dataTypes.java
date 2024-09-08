@@ -1,7 +1,5 @@
 package datatypes;
 
-import java.lang.reflect.Array;
-
 public class dataTypes {
 
     static Boolean b=true;

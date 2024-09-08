@@ -1,6 +1,5 @@
 package ad_java.collection.List;
 import java.util.Spliterator; 
-import java.util.stream.Stream; 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -34,6 +33,8 @@ public class ArrayList1 {
         System.out.println(list);
 
         System.out.println("\nIterator ");
+        
+        @SuppressWarnings("rawtypes")
         Iterator it = list.iterator();
         while (it.hasNext()) {
             System.out.print(it.next()+" ");

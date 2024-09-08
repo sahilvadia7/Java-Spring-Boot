@@ -10,7 +10,7 @@ import java.util.Scanner;
 	QueDemo(int size){
 			que = new int [size];
 			putloc = getloc = count = 0 ;
-			this.flag = flag;
+			
 	}
 	
 	void put(int i) {
@@ -36,7 +36,6 @@ import java.util.Scanner;
 	}
 	
 	private void check(boolean flag2) {
-		// TODO Auto-generated method stub
 		count++;
 		
 		if(flag == true) {
@@ -57,14 +56,7 @@ import java.util.Scanner;
 	static int size,element,data,userin;
 	static boolean flag;
 
-	Queue(int size,int element,int data,int userin){
-		this.size = size;
-		this.element = element;
-		this.data = data;
-		this.flag = flag;
-		this.userin = userin;
-	}
-	
+		
 		public static void main(String[] args) {
 			Scanner sc = new Scanner(System.in);
 			
@@ -92,7 +84,7 @@ import java.util.Scanner;
 				
 			}
 
-
+			sc.close();
 			
 		}
 }

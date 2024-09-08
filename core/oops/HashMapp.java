@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class HashMapp {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		
 		HashMap<String,String> capitalCities = new HashMap<String,String>();
 		capitalCities.put("Gujarat","Gandhinagar");

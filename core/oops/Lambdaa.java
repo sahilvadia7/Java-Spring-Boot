@@ -1,7 +1,5 @@
 package oops;
 
-import java.util.ArrayList;
-
 public class Lambdaa {
 
 	public static void main(String[] args) {

@@ -12,7 +12,7 @@ public class SyncronizedThread {
 
 		
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		counter c = new counter();
 	
 		Runnable r1 = () ->{

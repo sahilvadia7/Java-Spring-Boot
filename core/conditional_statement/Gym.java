@@ -32,7 +32,7 @@ public class Gym {
         System.out.print("Do you have Student ID (yes/no):");
         studentId= getin.next();
         studentIdStatus = studentId.equalsIgnoreCase("yes");
-
+        getin.close();
 
         if (age == 18 ) {
             if (income >= 2500) {

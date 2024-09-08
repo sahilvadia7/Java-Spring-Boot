@@ -10,7 +10,7 @@ public class TwoDarrayAddition {
 	    static Scanner sc = new Scanner(System.in);
 	    
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		System.out.print("Enter how many row need: ");
 		row = sc.nextInt();
 		
@@ -40,7 +40,7 @@ public class TwoDarrayAddition {
 	}
 
 	private static void additionPrint(int[][] arr1,int[][] arr2,int[][] addition) {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		
 		System.out.println("\n1st Array");
 		for(int i=0; i<row; i++) {
@@ -72,7 +72,7 @@ public class TwoDarrayAddition {
 	}
 
 	private static int[][] additionArray(int[][] arr1,int[][] arr2) {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		int[][] addition = new int [row][col];
 		for(int i=0; i<row; i++) {
 			for(int j=0; j<col; j++) {

@@ -12,15 +12,13 @@ public class vehicle1 {
 		 this.id=id;
 		 this.capacity = capacity;
 		 this.name = name;
-		 this.fuelCap = fuelCap;
-		 this.Kpl = Kpl;
+		 vehicle1.fuelCap = fuelCap;
+		 vehicle1.Kpl = Kpl;
 		
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stud
 	
-		
 		vehicle1 minivan = new vehicle1(1,5,"minivan",50,10);
 		carInfo(minivan.id,minivan.capacity,minivan.name,minivan.range(fuelCap,Kpl));
 		

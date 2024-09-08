@@ -24,7 +24,7 @@ public class ArrayListt {
             System.out.println(i);
         }
 
-        Collection a =new ArrayList<>();
+        Collection<Integer> a =new ArrayList<>();
         a.add(1);
         System.out.println(a);
 

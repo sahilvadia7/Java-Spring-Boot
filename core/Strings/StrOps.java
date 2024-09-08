@@ -16,7 +16,7 @@ public class StrOps {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		//  Auto-generated method stub
 		String str1 = "When it comes to web programming, java is #1, java is robust";
 		String str2 = new String(str1);
 		String str3 = "Java Strings are powerful.";
