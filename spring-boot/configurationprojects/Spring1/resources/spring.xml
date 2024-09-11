@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    
+  	<!-- <bean id="alien" class="com.project.Spring1.Alien" scope="prototype">
+	</bean>-->
+	
+	 	<bean id="alien" class="com.project.Spring1.Alien" autowire="byName" >
+	 	<!-- inject values-->
+	 	<!-- setter Injection
+			<property name="name" value="john"></property>
+			<property name="laptop" ref="lap"/>
+			-->
+		<!-- Constructor Injection
+		<constructor-arg  value="john"/>
+	 	<constructor-arg ref="lap"/>
+	 	-->
+	 	
+	 		<property name="name" value="john"></property>
+			
+		</bean>
+		
+		<bean id="laptop" class="com.project.Spring1.Laptop">
+		
+		</bean>
+</beans>
