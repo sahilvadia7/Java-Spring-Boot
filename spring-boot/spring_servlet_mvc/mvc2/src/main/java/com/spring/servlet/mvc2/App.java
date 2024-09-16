@@ -10,16 +10,13 @@ public class App {
     System.out.println("Starting Tomcat server...");
 
     Tomcat tomcat = new Tomcat();
-    tomcat.setPort(8080); // Ensure this port is not used by another application
-
-    // Add a context with root path
+    tomcat.start();
+    tomcat.getServer().await();
+    
     Context context = tomcat.addContext("", null);
-
-    // Register the servlet and map it to /hello
-    Tomcat.addServlet(context, "firstservlet", new Firstservlet());
-    context.addServletMappingDecoded("/mymy", "firstservlet");
-
-    // Start Tomcat server
+    Tomcat.addServlet(context,"firstservlet",new Firstservlet());
+    context.addServletMappingDecoded("/hello","firstservlet");
+    
     tomcat.start();
     tomcat.getServer().await();
 }
