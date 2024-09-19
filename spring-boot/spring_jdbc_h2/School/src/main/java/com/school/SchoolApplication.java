@@ -1,5 +1,7 @@
 package com.school;
 
+import java.util.Scanner;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.*;
@@ -13,9 +15,17 @@ public class SchoolApplication {
 		ApplicationContext context = SpringApplication.run(SchoolApplication.class, args);
 		
 		Student s1 = context.getBean(Student.class);
-		s1.setRollno(6);
-		s1.setName("tanvi");
-		s1.setMarks(100);
+		Scanner se = new Scanner(System.in);
+		
+		
+		System.out.print("Enter RollNo: ");
+		s1.setRollno(se.nextInt());
+		
+		System.out.print("Enter Name: ");
+		s1.setName(se.next());
+		
+		System.out.print("Enter Marks: ");
+		s1.setMarks(se.nextInt());
 		
 		StudentService ss = context.getBean(StudentService.class);
 		ss.addStudent(s1);
