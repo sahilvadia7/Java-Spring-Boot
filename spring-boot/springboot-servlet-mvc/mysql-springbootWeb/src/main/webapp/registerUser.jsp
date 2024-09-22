@@ -12,7 +12,8 @@
     <h2>Register User</h2>
 	
 	<h3>User : ${name}</h3>
-	<h3>Email : <%= session.getAttribute("email") %></h3>
+	<h3>Email : ${email}</h3>
+<!--	<h3>Email : <%= session.getAttribute("email") %></h3>-->
    
   </div>
 </body>
