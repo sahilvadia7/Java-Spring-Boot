@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Registration or Sign Up form in HTML CSS | CodingLab </title> 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
    </head>
 <body>
   <div class="wrapper">
@@ -18,10 +18,10 @@
         <input type="text" id="email" name="email" placeholder="Enter your email" required>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Create password" required>
+        <input type="password" name="password" id="password" placeholder="Create password" required>
       </div>
       <div class="input-box">
-        <input type="password" placeholder="Confirm password" required>
+        <input type="password"  placeholder="Confirm password" required>
       </div>
       <div class="policy">
         <input type="checkbox">
