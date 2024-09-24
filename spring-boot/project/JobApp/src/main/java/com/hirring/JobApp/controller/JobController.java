@@ -2,6 +2,7 @@ package com.hirring.JobApp.controller;
 
 import java.util.List;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,9 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.hirring.JobApp.model.JobPost;
 import com.hirring.JobApp.service.JobService;
 
-
 @Controller
-public class jobController {
+public class JobController {
 
 	@Autowired
 	private JobService service;
@@ -30,7 +30,6 @@ public class jobController {
 
 	@RequestMapping("/addjob")
 	public String addJob() {
-		System.out.println("called");
 		return "addjob";
 	}
 
@@ -48,10 +47,8 @@ public class jobController {
 	// ************************************************************************
 
 	@PostMapping("/handleForm")
-	public String handleAddJobForm(JobPost jobPost,Model model) {
-		model.addAttribute("jobPost", jobPost);
+	public String handleAddJobForm(JobPost jobPost) {
 		service.addJobPost(jobPost);
-		//System.out.println(jobPost);
 		  return "success";
 		
 	}

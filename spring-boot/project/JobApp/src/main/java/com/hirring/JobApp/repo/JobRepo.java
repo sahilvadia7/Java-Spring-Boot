@@ -1,6 +1,5 @@
 package com.hirring.JobApp.repo;
 
-
 import java.util.ArrayList;
 
 import java.util.List;
@@ -8,7 +7,6 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import com.hirring.JobApp.model.JobPost;
-
 
 @Repository
 public class JobRepo {
@@ -20,7 +18,7 @@ public class JobRepo {
 
 	// constructor->injecting objects into ArrayList defined above.
 	public JobRepo() {
-		
+
 		// Java Developer Job Post
 		jobs.add(new JobPost(1, "Java Developer", "Must have good experience in core Java and advanced Java", 2,
 				List.of("Core Java", "J2EE", "Spring Boot", "Hibernate")));
@@ -109,7 +107,8 @@ public class JobRepo {
 				List.of("Game Development", "Unity", "C#", "3D Modeling")));
 
 		// Job Post 20
-		jobs.add(new JobPost(20, "IT Project Manager", "Lead and manage IT projects from initiation to completion",
+		jobs
+				.add(new JobPost(20, "IT Project Manager", "Lead and manage IT projects from initiation to completion",
 						6, List.of("Project Management", "Agile", "Scrum", "Risk Management")));
 
 	}

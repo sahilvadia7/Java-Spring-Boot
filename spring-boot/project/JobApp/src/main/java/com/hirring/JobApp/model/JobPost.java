@@ -1,5 +1,6 @@
 package com.hirring.JobApp.model;
 
+
 import java.util.List;
 
 import org.springframework.stereotype.Component;
@@ -20,4 +21,5 @@ public class JobPost {
 	private Integer reqExperience;
 	private List<String> postTechStack;
 	
+
 }

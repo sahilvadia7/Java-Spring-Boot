@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	
 
 
 <!DOCTYPE html>
@@ -9,7 +8,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Job Portal</title>
+<title>Telusko Job Portal</title>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -39,9 +38,9 @@ p {
 
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-clr">
-		<div class="container"><b>
-			<a class="navbar-brand fs-1 fw-medium " href="#">Job
-				Portal Web App</a></b>
+		<div class="container">
+			<a class="navbar-brand fs-1 fw-medium " href="#">Telusko Job
+				Portal Web App</a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false"
@@ -68,7 +67,7 @@ p {
 			<div class="col-md-6 mb-5">
 				<div class="card">
 					<div class="card-body text-center">
-						<a href="/viewalljobs" class="btn btn-primary">View All Jobs</a>
+						<a href="/viewalljobs" class="btn btn-primary">View AllJobs</a>
 					</div>
 				</div>
 			</div>
@@ -77,7 +76,8 @@ p {
 			<div class="col-md-6 mb-5">
 				<div class="card">
 					<div class="card-body text-center">
-						<a href="/addjob" class="btn btn-primary">Add Jobs</a>
+						<a href="/addjob" class="btn btn-primary">Add Job</a>
+
 
 					</div>
 				</div>

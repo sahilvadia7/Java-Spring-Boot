@@ -38,7 +38,9 @@
 
 <div class="container mt-5">
     <h2 class="mb-4 text-center font-weight-bold">Job Post List</h2>
-
+    
+    <!-- testing -->
+	search<input type="text" placeholder="search here"/><button type="submit"/>
     <div class="row row-cols-2">
         <ab:forEach var="jobPost" items="${jobPosts}">
             <div class="col mb-4">

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 import com.hirring.JobApp.model.JobPost;
 import com.hirring.JobApp.repo.JobRepo;
 
-
 @Service
 public class JobService {
 	@Autowired
