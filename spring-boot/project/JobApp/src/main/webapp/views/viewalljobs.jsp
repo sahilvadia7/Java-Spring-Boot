@@ -2,8 +2,8 @@
 <%@ taglib prefix="ab" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page isELIgnored="false"%>
 <%@ page import="java.util.List" %>
-<%@ page import="com.hirring.JobApp.model.JobPost" %>
-<%@ page import="com.hirring.JobApp.repo.JobRepo" %>
+<%@ page import="com.spring_boot_rest.jobportal.model.JobPost" %>
+<%@ page import="com.spring_boot_rest.jobportal.repo.JobRepo" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
