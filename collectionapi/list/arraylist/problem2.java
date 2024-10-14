@@ -1,8 +1,7 @@
 //Problem Statement: Write a program to store employee details (ID, name) in an `ArrayList` and sort the list based on employee names.
-package list;
+package list.arraylist;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 

@@ -1,6 +1,6 @@
 //Develop a Todo List manager using an ArrayList where users can add, update, and delete tasks.
 
-package list;
+package list.arraylist;
 
 import java.text.SimpleDateFormat;
 import java.util.*;

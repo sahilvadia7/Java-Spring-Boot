@@ -1,6 +1,6 @@
 // Problem Statement: Create a program to manage a list of book titles using an ArrayList. Allow the user to add, remove, and search for a book in the list.
 
-package list;
+package list.arraylist;
 
 import java.util.ArrayList;
 import java.util.List;

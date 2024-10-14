@@ -1,6 +1,6 @@
 //implement a number-guessing game where past guesses are stored in an `ArrayList` and displayed after each attempt.
 
-package list;
+package list.arraylist;
 
 import java.util.ArrayList;
 import java.util.List;
