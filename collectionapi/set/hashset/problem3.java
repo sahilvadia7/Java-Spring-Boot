@@ -1,5 +1,5 @@
 //Create a program that checks if all characters in a given string are unique using a `HashSet`.
-package list.hashset;
+package set.hashset;
 
 import java.util.HashSet;
 import java.util.Scanner;

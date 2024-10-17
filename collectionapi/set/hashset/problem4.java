@@ -1,5 +1,5 @@
 //prints "hello world" as "Hello World" with the first letter of each word capitalized
-package list.hashset;
+package set.hashset;
 
 import java.util.HashSet;
 import java.util.Scanner;

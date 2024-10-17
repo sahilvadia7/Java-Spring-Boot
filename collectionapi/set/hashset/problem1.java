@@ -1,5 +1,5 @@
 //Create a program to manage a list of unique city names using a `HashSet`. Allow adding cities, checking if a city exists, and displaying all cities.
-package list.hashset;
+package set.hashset;
 
 import java.util.HashSet;
 import java.util.Objects;

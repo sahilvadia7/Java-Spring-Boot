@@ -1,5 +1,5 @@
 //Write a program to remove duplicate elements from an `ArrayList` of integers and store unique elements in a `HashSet`.
-package list.hashset;
+package set.hashset;
 
 import java.util.*;
 
