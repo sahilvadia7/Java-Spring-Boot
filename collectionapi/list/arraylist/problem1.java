@@ -23,7 +23,6 @@ public class problem1 {
             System.out.print("Select option : ");
             opt = input.nextInt();
 
-
             switch (opt) {
                 case 1:
                     System.out.print("Number of book you want to enter: ");
@@ -33,7 +32,6 @@ public class problem1 {
                         BookLibrary.add(input.next());
                     }
                     break;
-
                 case 2:
                     if (BookLibrary.isEmpty()) {
                         System.out.println("empty");
@@ -42,7 +40,6 @@ public class problem1 {
                         BookLibrary.forEach(System.out::println);
                     }
                     break;
-
                 case 3:
                     if (BookLibrary.isEmpty()) {
                         System.out.println("empty");
@@ -53,7 +50,6 @@ public class problem1 {
                         System.out.println("removed");
                     }
                     break;
-
                 case 4:
                     if (BookLibrary.isEmpty()) {
                         System.out.println("empty");
@@ -61,15 +57,12 @@ public class problem1 {
                         System.out.print("search element: ");
                         String name = input.next();
 
-                        System.out.println("index of Book: "+
-                                BookLibrary.indexOf(name)
+                        System.out.println(
+                            "index of Book: " + BookLibrary.indexOf(name)
                         );
                     }
-
-
             }
-
-        }while (opt != 0) ;
-        }
+        } while (opt != 0);
+        input.close();
     }
-
+}
