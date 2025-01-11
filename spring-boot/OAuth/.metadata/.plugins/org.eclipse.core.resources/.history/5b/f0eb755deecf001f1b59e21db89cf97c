@@ -1,0 +1,5 @@
+spring.application.name=demo
+
+
+spring.security.oauth2.client.registration.google.client-id=275763186524-p7hrp1420vkl2lr1la34mmhqmj0m8vg9.apps.googleusercontent.com
+spring.security.oauth2.client.registration.google.client-secret=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
