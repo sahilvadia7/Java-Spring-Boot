@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,22 +24,32 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class QuestionController {
 
 	@Autowired
-	private QuestionService quesServie;
+	private QuestionService quesService;
 	
 	
 	@GetMapping("/getAll")
-	public List<Question> getAll() {
-		return quesServie.getAll();
-	}
+	public ResponseEntity<List<Question>> getAll() {
+		return quesService.getAll();
+	} 
 	
 	@PostMapping("/addQue")
-	public Question add(@RequestBody Question ques) {
-		return quesServie.addQues(ques);
+	public ResponseEntity<Question> add(@RequestBody Question ques) {
+		return quesService.addQues(ques);
+	}
+	
+	@PostMapping("/addMultiple")
+	public ResponseEntity<List<Question>> addMultiple(@RequestBody List<Question> ques){
+		return quesService.addMultiple(ques);
 	}
 	
 	@GetMapping("/byCategory/{category}")
-	public List<Question> getByCategory(@PathVariable String category) {
-		return quesServie.getByCategory(category);
-	}
+	public ResponseEntity<List<Question>> getByCategory(@PathVariable String category) {
+		return quesService.getByCategory(category);
+	} 
+	
+	@GetMapping("/byDifficultylevel/{level}")
+	public ResponseEntity<List<Question>> getByDiffLevel(@PathVariable String level) {
+		return quesService.getByDiffLevel(level);
+	} 
 	
 }
