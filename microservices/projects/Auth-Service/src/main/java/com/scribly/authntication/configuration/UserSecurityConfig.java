@@ -29,10 +29,15 @@ public class UserSecurityConfig {
 	private JWTFilter jwtfilter;
 	
 	@Bean
+	public BCryptPasswordEncoder passwordEncoder() {
+	    return new BCryptPasswordEncoder(12);
+	}
+	
+	@Bean
 	public AuthenticationProvider authProvider() {
 		DaoAuthenticationProvider daoProvider = new DaoAuthenticationProvider();
 		daoProvider.setUserDetailsService(userDetailsService);
-		daoProvider.setPasswordEncoder(new BCryptPasswordEncoder(12));
+		daoProvider.setPasswordEncoder(passwordEncoder());
 		return daoProvider;
 	}
 
