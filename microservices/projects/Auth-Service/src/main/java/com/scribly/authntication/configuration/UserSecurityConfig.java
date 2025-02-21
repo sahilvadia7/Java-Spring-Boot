@@ -22,7 +22,7 @@ import com.scribly.authntication.filter.JWTFilter;
 @EnableWebSecurity
 public class UserSecurityConfig {
 	
-	@Autowired
+	@Autowired // use for fetch data from database
 	private UserDetailsService userDetailsService;
 	
 	@Autowired
