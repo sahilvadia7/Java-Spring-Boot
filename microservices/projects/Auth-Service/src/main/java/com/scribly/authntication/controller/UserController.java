@@ -17,6 +17,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -43,39 +44,21 @@ public class UserController {
 		return userService.registerUser(user);
 	}
 	
-//	@PostMapping("/login")
-//	public String Login(@RequestBody User user) {
-//		
-//		Authentication authentication = authenticationManager
-//				.authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword()));
-//		
-//		if(authentication.isAuthenticated()) {
-//			System.out.println("authenticated");
-//			return jwtservice.getToken(user.getUsername());
-//		}
-//		else {
-//			return "login failed";
-//		}
-//	}
-	
-	
 	@PostMapping("/login")
-	public ResponseEntity<?> Login(@RequestBody User user) {
-	    Authentication authentication = authenticationManager.authenticate(
-	        new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword())
-	    );
-
-	    if (authentication.isAuthenticated()) {
-	        String token = jwtservice.getToken(user.getUsername());
-	        Map<String, String> response = new HashMap<>();
-	        response.put("token", token);
-	        response.put("username", user.getUsername());
-	        return ResponseEntity.ok(response);
-	    } else {
-	        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("error", "Login failed"));
-	    }
+	public String Login(@RequestBody User user) {
+		
+		Authentication authentication = authenticationManager
+				.authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword()));
+		
+		if(authentication.isAuthenticated()) {
+			System.out.println("authenticated");
+			return jwtservice.getToken(user.getUsername());
+		}
+		else {
+			return "login failed";
+		}
 	}
-
+	
 	@GetMapping("greet")
 	public ResponseEntity<String> Greet() {
 		return new ResponseEntity<String>("Welcome back",HttpStatus.ACCEPTED);
